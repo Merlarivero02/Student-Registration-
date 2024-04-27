@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BookController;
+use App\Http\Controllers\StudentController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -30,5 +30,5 @@ Route::delete('/product', function (Request $request) {
     return 'Hello product from delete';
 });
 
-Route::get('/books', [BookController::class, 'get']);
-Route::post('/books', [BookController::class, 'add']);
+Route::get('/students', [StudentController::class, 'get']);
+Route::post('/students', [StudentController::class, 'add']);
