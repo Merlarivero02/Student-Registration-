@@ -32,3 +32,6 @@ Route::delete('/product', function (Request $request) {
 
 Route::get('/students', [StudentController::class, 'get']);
 Route::post('/students', [StudentController::class, 'add']);
+Route::put('/students/{id}', [StudentController::class, 'update']);
+Route::delete('/students/{id}', [StudentController::class, 'delete']);
+

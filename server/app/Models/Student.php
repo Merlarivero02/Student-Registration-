@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Student extends Model
 {
     protected $fillable = [
-        'id','firstname','middlename','lastname','gender','address',
+        'id','firstname','middlename','lastname','gender','contact_number'
     ];
     use HasFactory;
 }
